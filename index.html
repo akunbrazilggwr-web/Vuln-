@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>CyberSec Practice Lab</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">CyberSec Practice Lab</div>
+  <nav>
+    <a href="#home">Beranda</a>
+    <a href="#labs">Labs</a>
+    <a href="#learn">Materi</a>
+    <a href="#about">Tentang</a>
+  </nav>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div>
+    <p class="eyebrow">LOCAL TRAINING ENVIRONMENT</p>
+    <h1>Belajar Cybersecurity dengan praktik langsung.</h1>
+    <p class="lead">Laboratorium lokal untuk memahami keamanan aplikasi web, jaringan, autentikasi, dan analisis log secara aman.</p>
+    <a class="button" href="#labs">Mulai Praktik</a>
+  </div>
+  <div class="terminal-card">
+    <div class="dots"><i></i><i></i><i></i></div>
+    <pre>$ cyberlab status
+[OK] Training environment
+[OK] Safe local exercises
+[OK] Progress tracking
+$ start --lab web-security</pre>
+  </div>
+</section>
+
+<section id="labs" class="section">
+  <div class="section-head">
+    <div><p class="eyebrow">PRACTICE</p><h2>Laboratorium</h2></div>
+    <span id="progressText">0/6 selesai</span>
+  </div>
+  <div class="grid">
+    <article class="lab-card" data-lab="xss">
+      <span class="tag">WEB</span><h3>Reflected XSS</h3>
+      <p>Pahami bagaimana input pengguna dapat muncul kembali di halaman dan bagaimana output encoding mencegah eksekusi.</p>
+      <a href="labs/xss.html">Buka Lab</a>
+    </article>
+    <article class="lab-card" data-lab="sqli">
+      <span class="tag">WEB</span><h3>SQL Injection</h3>
+      <p>Pelajari perbedaan query yang dibangun secara tidak aman dan penggunaan parameterized query.</p>
+      <a href="labs/sqli.html">Buka Lab</a>
+    </article>
+    <article class="lab-card" data-lab="auth">
+      <span class="tag">AUTH</span><h3>Authentication</h3>
+      <p>Latihan mengenali kelemahan password policy, session handling, dan kontrol akses.</p>
+      <a href="labs/auth.html">Buka Lab</a>
+    </article>
+    <article class="lab-card" data-lab="headers">
+      <span class="tag">HTTP</span><h3>Security Headers</h3>
+      <p>Identifikasi header keamanan yang hilang dan pahami fungsi CSP, HSTS, X-Content-Type-Options, dan lainnya.</p>
+      <a href="labs/headers.html">Buka Lab</a>
+    </article>
+    <article class="lab-card" data-lab="log">
+      <span class="tag">BLUE TEAM</span><h3>Log Analysis</h3>
+      <p>Analisis log HTTP untuk menemukan pola login gagal, scanning, dan aktivitas mencurigakan.</p>
+      <a href="labs/log.html">Buka Lab</a>
+    </article>
+    <article class="lab-card" data-lab="network">
+      <span class="tag">NETWORK</span><h3>Network Basics</h3>
+      <p>Kenali IP, port, protokol, DNS, HTTP, dan konsep dasar segmentasi jaringan melalui simulasi.</p>
+      <a href="labs/network.html">Buka Lab</a>
+    </article>
+  </div>
+</section>
+
+<section id="learn" class="section learning">
+  <p class="eyebrow">ROADMAP</p><h2>Materi yang dipelajari</h2>
+  <div class="roadmap">
+    <div><b>01</b><span>HTTP & Web Fundamentals</span></div>
+    <div><b>02</b><span>OWASP Web Security</span></div>
+    <div><b>03</b><span>Authentication & Sessions</span></div>
+    <div><b>04</b><span>Network & DNS Fundamentals</span></div>
+    <div><b>05</b><span>Logging & Incident Analysis</span></div>
+    <div><b>06</b><span>Secure Coding</span></div>
+  </div>
+</section>
+
+<section id="about" class="section about">
+  <h2>Lingkungan aman</h2>
+  <p>Lab ini dirancang untuk dijalankan secara lokal dan tidak melakukan serangan ke sistem pihak lain. Gunakan hanya pada target yang kamu miliki atau yang secara eksplisit mengizinkan pengujian.</p>
+</section>
+</main>
+<script src="js/app.js"></script>
+</body>
+</html>
