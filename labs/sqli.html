@@ -1,0 +1,6 @@
+<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Lab SQL Injection</title><link rel="stylesheet" href="../css/style.css"></head><body><main class="section"><p class="eyebrow">LAB 02</p><h1>SQL Injection</h1><p>Simulasi aman: perhatikan bagaimana aplikasi seharusnya memperlakukan input sebagai data, bukan bagian dari query.</p><div class="terminal-card"><pre>UNSAFE CONCEPT:
+"SELECT * FROM users WHERE name = '" + input + "'"
+
+SAFE CONCEPT:
+SELECT * FROM users WHERE name = ?
+parameter = input</pre></div><h2>Checklist</h2><p>Gunakan prepared statements, least privilege pada akun database, validasi input, error handling yang aman, dan logging.</p><button class="button" onclick="localStorage.setItem('lab-sqli','done');location.href='../index.html'">Tandai selesai</button></main></body></html>
